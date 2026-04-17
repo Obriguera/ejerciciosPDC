@@ -1,0 +1,52 @@
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(63, 63, 63);
+}
+
+.card{
+    width: 100%;
+}
+
+.cargaElementos{
+    display: flex;
+    flex: row;
+    background-color: aliceblue;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.listaElementos{
+    display: flex;
+    flex: column;
+    background-color: aliceblue;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Quita los puntos y el espacio extra de la lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Muy importante para que ocupe todo el ancho */
+}
+
+.elementoLista {
+    display: flex;
+    justify-content: space-between; /* Empuja el botón al final */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0; /* Espaciado entre productos */
+}
+
+/* Para asegurar que el texto se quede a la izquierda */
+.elementoLista li {
+    flex-grow: 1; /* El texto ocupa todo el espacio disponible */
+    text-align: left;
+}

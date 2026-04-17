@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+    <body class="cuerpo">
+        <h1 class="bg-warning col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6">LISTADO DINAMICO CON JAVASCRIPT</h1>
+        <div class="cargaElementos col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6">
+            <label for="agregarLista">Agregue productos:</label>
+            <input type="text" id="agregarLista" placeholder="Ej:Leche" autofocus name="agregarLista"/>
+            <button class="btn btn-success" type="button" id="btnAgregar">Agregar</button>
+        </div>
+
+        <div class="listaElementos col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6">
+            <ul id="listaProductos"></ul>
+            <script src="./script.js"></script>
+        </div>
+    </body>
+</html>

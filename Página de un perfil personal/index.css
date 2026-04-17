@@ -1,0 +1,108 @@
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content:center;
+    background-image: linear-gradient(rgb(233, 226, 132),rgb(231, 111, 111), rgb(247, 158, 172));
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pfp {
+    max-width: 10%;
+    max-height: auto;
+    box-shadow: 10px 5px 10px rgb(0, 0, 0);
+    border-radius: 100px;
+}
+
+.link {
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s ease; /* Adds a smooth transition */
+}
+
+.link:hover {
+  background-color: #00bcd4; /* New background color on hover */
+  cursor: pointer; /* Changes the cursor to a hand icon */
+}
+
+.cualidades{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.encabezados {
+    text-shadow: 1px 2px 3px #00bcd4;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+
+/* Media Queries - Responsividad */
+
+/* Tablets (768px y menos) */
+@media (max-width: 768px) {
+    .cuerpo {
+        padding: 20px;
+    }
+    
+    .cualidades {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .pfp {
+        max-width: 30%;
+    }
+    
+    .encabezados {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+/* Móviles (480px y menos) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .pfp {
+        max-width: 50%;
+    }
+    
+    .encabezados {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 0.85rem;
+        padding: 0 15px;
+    }
+    
+    ul {
+        font-size: 0.9rem;
+    }
+    
+    .link {
+        width: 90%;
+        text-align: center;
+    }
+}
