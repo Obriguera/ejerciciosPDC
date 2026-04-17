@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de la Quiniela de Córdoba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./quiniela.css">
+</head>
+<body class="cuerpo">
+    <h1>Quiniela de Córdoba</h1>
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 20px;">
+        <button id="btn-sortear" class="btn btn-warning">Iniciar Sorteo</button>
+    </div>
+    
+    <div id="resultados" class="resultados"></div>
+
+    <table class="table table-striped table-bordered table-hover col-12">
+        <thead>
+            <tr>
+                <th class="col-4">Sorteo</th>
+                <th class="col-4">Número</th>
+                <th  class="col-4">Acumulado</th>
+            </tr>
+        </thead>
+        <tbody id="t-resultados"></tbody>
+    </table>
+    <script src="./quiniela.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: chocolate;
+}
+
+.tarjetero {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
