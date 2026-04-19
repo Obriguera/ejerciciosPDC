@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing PDC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./estilo.css" />
+  </head>
+  <body class="cuerpo">
+    <header class="cabecera">
+      <h1 class="titulo-empresa">Marketing PDC</h1>
+    </header>
+
+    <main class="container pb-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <table class="table tabla">
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alquiler de Yoshi para pasear al perro (incluye casco mini)</td>
+          <td>$39.99</td>
+        </tr>
+        <tr>
+          <td>
+            Consultoria para aprender a saltar como Mario sin romperte la
+            rodilla
+          </td>
+          <td>$24.50</td>
+        </tr>
+        <tr>
+          <td>
+            Suscripcion mensual al Club "Aplaude cuando sale una estrella"
+          </td>
+          <td>$9.99</td>
+        </tr>
+        <tr>
+          <td>Paquete premium: que Kirby limpie tus migas de galletitas</td>
+          <td>$59.00</td>
+        </tr>
+        <tr>
+          <td>
+            Entrenamiento express para tirar caparazones en discusiones
+            familiares
+          </td>
+          <td>$17.75</td>
+        </tr>
+        <tr>
+          <td>
+            Reparacion emocional despues de perder en Mario Kart en la ultima
+            vuelta
+          </td>
+          <td>$12.00</td>
+        </tr>
+        <tr>
+          <td>Curso intensivo para soplar cartuchos con estilo profesional</td>
+          <td>$14.20</td>
+        </tr>
+        <tr>
+          <td>Servicio VIP: Peach te manda un "gracias" por correo postal</td>
+          <td>$44.44</td>
+        </tr>
+        <tr>
+          <td>Modo dificil: Waluigi te motiva mientras haces sentadillas</td>
+          <td>$27.00</td>
+        </tr>
+        <tr>
+          <td>Traduccion certificada de "Wahoo!" a 14 idiomas</td>
+          <td>$6.66</td>
+        </tr>
+      </tbody>
+    </table>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div id="testimoniosCarousel" class="carousel slide carousel-testimonios" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-testimonio">
+            <p>"Nintendo entendio exactamente lo que necesitaba. Su servicio fue rapido, raro y sorprendentemente efectivo."</p>
+            <span>- Martina R.</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-testimonio">
+            <p>"Contratamos el paquete de Yoshi y la experiencia fue tan absurda como inolvidable. Lo volveria a comprar."</p>
+            <span>- Lucas G.</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-testimonio">
+            <p>"Me reieron los vecinos cuando vi el presupuesto, pero despues todos quisieron uno igual."</p>
+            <span>- Sofi M.</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="contenedor-formulario">
+      <form action="send" class="formulario">
+            <label for="campo-nombre">Nombre</label>
+            <input
+            type="text"
+            id="campo-nombre"
+            name="nombre"
+            placeholder="Ej: John Doe"
+            required
+            />
+            <label for="campo-email">Email</label>
+            <input
+            type="email"
+            id="campo-email"
+            name="email"
+            placeholder="Hola@ubp.edu.ar"
+            required
+            />
+            <label for="campo-mensaje">Mensaje</label>
+            <textarea
+            id="campo-mensaje"
+            name="mensaje"
+            rows="4"
+            placeholder="Hola, amo su servicio y no hay mejor empresa que ustedes jijo"
+            required
+            ></textarea>
+
+            <button type="submit" class="btn btn-warning btn-form">Envíar</button>
+        </form>
+    </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+      
+  </body>
+</html>
